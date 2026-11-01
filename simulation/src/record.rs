@@ -12,7 +12,7 @@ use crate::metrics::RunMetrics;
 /// runvault 上の実験名．`runvault path --experiment` に渡す値でもある．
 pub const EXPERIMENT: &str = "axelrod";
 /// リポジトリの安定 id．git remote の名前とは独立に固定する．
-pub const REPO_ID: &str = "axelrod1997";
+pub const REPO_ID: &str = "rep-axelrod1997";
 /// 分野．`simulation` を名乗ると `master_seed` が必須になる．
 pub const DOMAIN: &str = "simulation";
 
@@ -39,7 +39,7 @@ pub fn replication() -> Replication {
             "feature-trait-asymmetry",
             "More features reduce the number of stable regions while more traits increase it",
         ))
-        .obsidian_note("研究/98_論文レポート/80-再現実験/実装完了/axelrod1997/設計書.md")
+        .obsidian_note("研究/98_論文レポート/80-再現実験/実装完了/rep-axelrod1997/設計書.md")
 }
 
 /// 試行 1 本の結果．`events.jsonl` の 1 行と，run 全体の集約の材料になる．
